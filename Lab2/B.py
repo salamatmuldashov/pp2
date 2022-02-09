@@ -1,7 +1,5 @@
 n = int(input())
-s = str
-for i in range(n):
-    m = int(input())
-    s[i] = m
+a = list(map(int,input().split()))
+a = sorted(a)
+print(a[-1]*a[-2])
 
-print(s)
