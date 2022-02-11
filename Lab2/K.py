@@ -1,10 +1,30 @@
-from string import ascii_lowercase, ascii_uppercase
+s = input()
+s = s.replace(",","")
+s = s.replace("!","")
+s = s.replace("?","")
+s = s.replace(".","")
+s = s.replace(":","")
 
-
-s = input().split()
+s = s.split()
 cnt = 0
+a = []
 for i in s:
-    cnt+=1
+    a.append(i)
+a.sort()
+b = {}
+for i in a:
+    b.setdefault(i)
+
+
+
+print(len(b))
+for i in b:
+    print(i)
+
+
+    
+    
+
 
 
 

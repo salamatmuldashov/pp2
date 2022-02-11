@@ -19,11 +19,7 @@ print(sum)
 
 
 
-# sum = 0
-# for i in range (len(s)):
-#     sum = sum ^ s[i]
 
-# print(sum)
 
 
 
