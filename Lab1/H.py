@@ -5,10 +5,6 @@ for i in range(0,len(s)):
     if s[i] == t:
         cnt+=1
 
-
-
-
-
 if (cnt == 1):
     for i in range(0,len(s)):
         if s[i] == t:
