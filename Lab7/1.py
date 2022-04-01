@@ -2,10 +2,11 @@ import pygame
 import datetime
 
 pygame.init()
-image = pygame.image.load('mickey.jpg')
-screen = pygame.display.set_mode((1400,1100))
-right_hand = pygame.image.load('righthand1.png')
-left_hand = pygame.image.load('lefthand1.png')
+image = pygame.image.load('mickey.png')
+screen = pygame.display.set_mode((1500,1200))
+
+right_hand = pygame.image.load('2.png')
+left_hand = pygame.image.load('1.png')
 pygame.display.set_caption('Clock')
 clock = pygame.time.Clock()
 c = datetime.datetime.now()
@@ -29,11 +30,11 @@ while running:
     c = datetime.datetime.now()
     seconds = c.second
     minutes = c.minute
-    angle_1 = (2 * seconds) + 500
-    angle_2 = (minutes*6 + ((seconds*6)/ 60)) + 26
+    angle_1 = (2 * seconds) + 18
+    angle_2 = (minutes*6 + ((seconds*6)/ 60)) + 54
     screen.blit(image,(0,0))
     Rotate(screen,left_hand, (680,0), angle_1)
-    Rotate(screen,right_hand, (300,300), angle_2)
+    Rotate(screen,right_hand,(0,0), angle_2)
     pygame.display.flip()
     
 pygame.quit()
