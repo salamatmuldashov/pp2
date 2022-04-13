@@ -1,8 +1,9 @@
 import re
-s = input()
-x = re.findall('a(.+)b$', s)
-print(x)
-if x:
-    print("There is a match")
+pattern = "arfsdfrrcat123435dog"
+a = re.search('.+cat\d{2,}dog$',pattern) # /d
+if a:
+    print("yes")
 else:
-    print("None")
+    print("no")
+
+
