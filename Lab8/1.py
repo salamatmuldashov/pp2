@@ -1,5 +1,4 @@
-from cProfile import run
-import pygame,time,random,sys
+import pygame,time,random
 pygame.init()
 pygame.mixer.init()
 FPS = 60
