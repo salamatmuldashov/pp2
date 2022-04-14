@@ -112,9 +112,9 @@ while True:
         cnt+=1
 
     SURF.blit(bg,(0,0))
-    scores = font_1.render(str(SCORE), True, (0,0,0))
+    scores = font_1.render(f"Score: {SCORE}", True, (0,0,0))
     SURF.blit(scores,(10,10))
-    spd = font_1.render(str(SPEED),True,(255,0,0))
+    spd = font_1.render(f"Speed: {SPEED}",True,(255,0,0))
     SURF.blit(spd,(300,10))
     for entity in allsprites:
         SURF.blit(entity.image, entity.rect)
