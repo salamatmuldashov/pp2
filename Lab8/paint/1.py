@@ -35,8 +35,8 @@ class Paint:
         pygame.draw.rect(self.surface, self.color, (self.start_pos[0], self.start_pos[1], self.x, self.y), 5)
     def drawCircle(self):
         pygame.draw.circle(self.surface, self.color, self.position, self.x, 5)
-    def drawSquare(self):
-        pygame.draw.rect(self.surface, self.color, (self.start_pos[0], self.start_pos[1], self.x, self.x), 5)    
+    # def drawSquare(self):
+    #     pygame.draw.rect(self.surface, self.color, (self.start_pos[0], self.start_pos[1], self.x, self.x), 5)    
     def eraser(self):
         pygame.draw.circle(self.surface, (255,255,255), self.position, self.rad)
 
@@ -64,8 +64,8 @@ class Paint:
                         self.drawRect()
                     if self.mode == 2:  #circle
                         self.drawCircle()
-                    if self.mode == 3:  #square
-                        self.drawSquare()
+                    # if self.mode == 3:  #square
+                    #     self.drawSquare()
         
                 if event.type == pygame.MOUSEMOTION and self.startdraw:
                     if self.mode == 0:  # eraser
@@ -77,8 +77,8 @@ class Paint:
                         self.mode = 1 
                     if event.key == pygame.K_2:
                         self.mode = 2 
-                    if event.key == pygame.K_3:
-                        self.mode = 3
+                    # if event.key == pygame.K_3:
+                    #     self.mode = 3
             pygame.display.update()
            
     
