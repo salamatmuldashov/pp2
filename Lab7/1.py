@@ -30,7 +30,7 @@ while running:
     c = datetime.datetime.now()
     seconds = c.second
     minutes = c.minute
-    angle_1 = (2 * seconds) + 18
+    angle_1 = (6 * seconds) + 18
     angle_2 = (minutes*6 + ((seconds*6)/ 60)) + 54
     screen.blit(image,(0,0))
     Rotate(screen,left_hand, (680,0), angle_1)
