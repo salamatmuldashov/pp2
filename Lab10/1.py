@@ -21,7 +21,7 @@ def insert():
             for row in f:
                 current.execute(insert_table,row)
 
-        config.commit()
+
 
 def delete():
     delete = """

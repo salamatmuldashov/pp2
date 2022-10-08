@@ -68,6 +68,9 @@ CALL deleteT(%s);
 def check(s): 
     return bool(re.match(r"[\+\d]?(\d{2,3}[-\.\s]??\d{2,3}[-\.\s]??\d{4}|\(\d{3}\)\s*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4})", s)) 
 
+# def check(s):
+#     if s[0] == '8' and  s[1] == '7' and len(s) == 11:
+
 while True: 
     command = input("search, insert, pagination, delete, exit\n") 
 
